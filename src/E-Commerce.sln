@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{6533F25E-B386-4123-B36A-CFFFF720A58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{91DECE5B-58F7-44F4-9090-156916F59656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{07516457-35A5-4A62-9AEE-2A0383D32F8D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE} = {BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075} = {BBDE2675-ECA9-4C92-A908-CB1A647E3075}
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8} = {30A54AAA-D516-471D-BA2C-7E3C76D835F8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolution", "DependencyResolution\DependencyResolution.csproj", "{0127CB1B-BF4A-430F-930D-23AF8880F899}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE} = {BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075} = {BBDE2675-ECA9-4C92-A908-CB1A647E3075}
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8} = {30A54AAA-D516-471D-BA2C-7E3C76D835F8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingServices", "ShippingService\ShippingServices.csproj", "{BBDE2675-ECA9-4C92-A908-CB1A647E3075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessingServices", "OrderProcessingServices\OrderProcessingServices.csproj", "{30A54AAA-D516-471D-BA2C-7E3C76D835F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryServices", "InventoryServices\InventoryServices.csproj", "{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Web Services", "External Web Services", "{171B23F7-2471-41C8-8E25-F839830CEF78}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.discountasp.net/tfs/hidinger
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Core\\Core.csproj
+		SccProjectName1 = Core
+		SccLocalPath1 = Core
+		SccProjectUniqueName2 = UI\\UI.csproj
+		SccProjectName2 = UI
+		SccLocalPath2 = UI
+		SccProjectUniqueName3 = Infrastructure\\Infrastructure.csproj
+		SccProjectName3 = Infrastructure
+		SccLocalPath3 = Infrastructure
+		SccProjectUniqueName4 = DependencyResolution\\DependencyResolution.csproj
+		SccProjectName4 = DependencyResolution
+		SccLocalPath4 = DependencyResolution
+		SccProjectUniqueName5 = ShippingService\\ShippingServices.csproj
+		SccProjectTopLevelParentUniqueName5 = E-Commerce.sln
+		SccProjectName5 = ShippingService
+		SccLocalPath5 = ShippingService
+		SccProjectUniqueName6 = OrderProcessingServices\\OrderProcessingServices.csproj
+		SccProjectTopLevelParentUniqueName6 = E-Commerce.sln
+		SccProjectName6 = OrderProcessingServices
+		SccLocalPath6 = OrderProcessingServices
+		SccProjectUniqueName7 = InventoryServices\\InventoryServices.csproj
+		SccProjectTopLevelParentUniqueName7 = E-Commerce.sln
+		SccProjectName7 = InventoryServices
+		SccLocalPath7 = InventoryServices
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6533F25E-B386-4123-B36A-CFFFF720A58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6533F25E-B386-4123-B36A-CFFFF720A58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6533F25E-B386-4123-B36A-CFFFF720A58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6533F25E-B386-4123-B36A-CFFFF720A58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DECE5B-58F7-44F4-9090-156916F59656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DECE5B-58F7-44F4-9090-156916F59656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DECE5B-58F7-44F4-9090-156916F59656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DECE5B-58F7-44F4-9090-156916F59656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07516457-35A5-4A62-9AEE-2A0383D32F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07516457-35A5-4A62-9AEE-2A0383D32F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07516457-35A5-4A62-9AEE-2A0383D32F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07516457-35A5-4A62-9AEE-2A0383D32F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0127CB1B-BF4A-430F-930D-23AF8880F899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0127CB1B-BF4A-430F-930D-23AF8880F899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0127CB1B-BF4A-430F-930D-23AF8880F899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0127CB1B-BF4A-430F-930D-23AF8880F899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30A54AAA-D516-471D-BA2C-7E3C76D835F8} = {171B23F7-2471-41C8-8E25-F839830CEF78}
+		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE} = {171B23F7-2471-41C8-8E25-F839830CEF78}
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075} = {171B23F7-2471-41C8-8E25-F839830CEF78}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿INFO - User visited home page at 5/14/2011 9:29:22 AM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 5/14/2011 9:29:49 AM
+INFO - User visited home page at 5/14/2011 9:31:38 AM
+INFO - User visited home page at 5/14/2011 9:48:13 AM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 5/14/2011 9:48:32 AM
+INFO - User visited home page at 5/14/2011 10:28:19 AM
+INFO - Your order of 2 items has been charged to 1111! It should arrive at your door shortly! at 5/14/2011 10:28:49 AM
+INFO - User visited home page at 5/14/2011 10:28:51 AM
+INFO - User visited home page at 5/14/2011 10:31:18 AM
+INFO - User visited home page at 5/14/2011 12:23:32 PM
+INFO - User visited home page at 5/14/2011 12:23:40 PM
+INFO - Your order of 2 items has been charged to 1111! It should arrive at your door shortly! at 5/14/2011 12:49:54 PM
+INFO - User visited home page at 5/14/2011 12:50:16 PM
+INFO - User visited home page at 5/14/2011 1:03:39 PM
+INFO - User visited home page at 7/13/2011 5:54:49 PM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2011 5:55:22 PM
+INFO - User visited home page at 7/13/2011 6:41:35 PM
+INFO - User visited home page at 7/13/2011 6:42:01 PM
+INFO - Your order of 2 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2011 6:42:21 PM
+INFO - User visited home page at 7/13/2011 6:45:45 PM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2011 6:54:13 PM
+INFO - User visited home page at 9/19/2011 9:49:38 PM
+INFO - User visited home page at 9/19/2011 9:54:11 PM
+INFO - User visited home page at 9/20/2011 5:04:49 PM
+INFO - Your order of 2 items has been charged to 1111! It should arrive at your door shortly! at 9/20/2011 5:05:29 PM
+INFO - User visited home page at 9/20/2011 5:05:31 PM
+INFO - User visited home page at 9/20/2011 5:58:17 PM
+INFO - User visited home page at 9/20/2011 6:00:40 PM
+INFO - User visited home page at 9/20/2011 6:01:04 PM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 9/20/2011 6:01:19 PM
+INFO - User visited home page at 9/20/2011 6:09:19 PM
