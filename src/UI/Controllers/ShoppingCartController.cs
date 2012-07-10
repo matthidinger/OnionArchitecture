@@ -2,7 +2,6 @@ using System;
 using System.Web.Mvc;
 using Core.Domain;
 using Core.Services;
-using Core;
 
 namespace UI.Controllers
 {
