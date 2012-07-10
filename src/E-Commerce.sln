@@ -28,36 +28,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Web Services", "External Web Services", "{171B23F7-2471-41C8-8E25-F839830CEF78}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs02.discountasp.net/tfs/hidinger
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Core\\Core.csproj
-		SccProjectName1 = Core
-		SccLocalPath1 = Core
-		SccProjectUniqueName2 = UI\\UI.csproj
-		SccProjectName2 = UI
-		SccLocalPath2 = UI
-		SccProjectUniqueName3 = Infrastructure\\Infrastructure.csproj
-		SccProjectName3 = Infrastructure
-		SccLocalPath3 = Infrastructure
-		SccProjectUniqueName4 = DependencyResolution\\DependencyResolution.csproj
-		SccProjectName4 = DependencyResolution
-		SccLocalPath4 = DependencyResolution
-		SccProjectUniqueName5 = ShippingService\\ShippingServices.csproj
-		SccProjectTopLevelParentUniqueName5 = E-Commerce.sln
-		SccProjectName5 = ShippingService
-		SccLocalPath5 = ShippingService
-		SccProjectUniqueName6 = OrderProcessingServices\\OrderProcessingServices.csproj
-		SccProjectTopLevelParentUniqueName6 = E-Commerce.sln
-		SccProjectName6 = OrderProcessingServices
-		SccLocalPath6 = OrderProcessingServices
-		SccProjectUniqueName7 = InventoryServices\\InventoryServices.csproj
-		SccProjectTopLevelParentUniqueName7 = E-Commerce.sln
-		SccProjectName7 = InventoryServices
-		SccLocalPath7 = InventoryServices
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

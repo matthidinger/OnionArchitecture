@@ -10,15 +10,13 @@ namespace Core.Services.Impl
         private readonly IOrderProcessor _orderProcessor;
         private readonly IShippingService _shippingService;
         private readonly ILogger _logger;
-        private readonly IUserSession _session;
 
-        public ShoppingCartProcessor(IInventoryService inventoryService, IOrderProcessor orderProcessor, IShippingService shippingService, ILogger logger, IUserSession session)
+        public ShoppingCartProcessor(IInventoryService inventoryService, IOrderProcessor orderProcessor, IShippingService shippingService, ILogger logger)
         {
             _inventoryService = inventoryService;
             _orderProcessor = orderProcessor;
             _shippingService = shippingService;
             _logger = logger;
-            _session = session;
         }
 
         public string CompleteCheckout(ShoppingCart cart, CreditCard creditCard)
