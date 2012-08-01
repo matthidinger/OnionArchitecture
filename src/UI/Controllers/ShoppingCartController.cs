@@ -9,14 +9,11 @@ namespace UI.Controllers
     {
         private readonly IUserSession _session;
         private readonly IShoppingCartProcessor _cartProcessor;
-        private readonly IDataContext _db;
 
-        public ShoppingCartController(IUserSession session, IShoppingCartProcessor cartProcessor, IDataContext db)
+        public ShoppingCartController(IUserSession session, IShoppingCartProcessor cartProcessor)
         {
             _session = session;
             _cartProcessor = cartProcessor;
-            _db = db;
-            
         }
 
         [HttpGet]

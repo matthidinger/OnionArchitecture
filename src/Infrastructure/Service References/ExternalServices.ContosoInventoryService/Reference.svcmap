@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4973f800-9813-4de9-80db-9037c9e95649" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:21345/ContosoInventoryService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ContosoInventoryService.xsd" MetadataType="Schema" ID="97e25964-53af-4cbc-b791-12de7bf100d0" SourceId="1" SourceUrl="http://localhost:21345/ContosoInventoryService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ContosoInventoryService.wsdl" MetadataType="Wsdl" ID="328fbc98-c623-49cc-8402-28fcdeab9c19" SourceId="1" SourceUrl="http://localhost:21345/ContosoInventoryService.svc?wsdl" />
+    <MetadataFile FileName="ContosoInventoryService1.xsd" MetadataType="Schema" ID="9f598c5a-d182-448e-808f-574f81503e79" SourceId="1" SourceUrl="http://localhost:21345/ContosoInventoryService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ContosoInventoryService.disco" MetadataType="Disco" ID="28e4c89c-391a-4df9-96c5-519985bbac0b" SourceId="1" SourceUrl="http://localhost:21345/ContosoInventoryService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

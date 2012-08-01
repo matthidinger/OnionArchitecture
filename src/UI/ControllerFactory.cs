@@ -10,7 +10,7 @@ namespace UI
         protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
         {
             if (controllerType == null)
-                return base.GetControllerInstance(requestContext, controllerType);
+                return base.GetControllerInstance(requestContext, null);
 
             if (!typeof(IController).IsAssignableFrom(controllerType))
                 throw new ArgumentException(string.Format(

@@ -3,6 +3,10 @@ using System.Web;
 
 namespace DependencyResolution
 {
+    // IMPORTANT:
+    // This module is only necessary for ASP.NET 3.5 or older apps
+    // ASP.NET 4.0 has [assembly:PreApplicationStartMethod] which will fire upon app start 
+    
     public class DependencyHttpModule : IHttpModule
     {
         private static bool _dependenciesRegistered;

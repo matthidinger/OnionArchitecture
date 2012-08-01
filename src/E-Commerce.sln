@@ -19,13 +19,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolution", "Dep
 		{30A54AAA-D516-471D-BA2C-7E3C76D835F8} = {30A54AAA-D516-471D-BA2C-7E3C76D835F8}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShippingServices", "ShippingService\ShippingServices.csproj", "{BBDE2675-ECA9-4C92-A908-CB1A647E3075}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessingServices", "OrderProcessingServices\OrderProcessingServices.csproj", "{30A54AAA-D516-471D-BA2C-7E3C76D835F8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryServices", "InventoryServices\InventoryServices.csproj", "{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Web Services", "External Web Services", "{171B23F7-2471-41C8-8E25-F839830CEF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeShippingServices", "AcmeShippingServices\AcmeShippingServices.csproj", "{BBDE2675-ECA9-4C92-A908-CB1A647E3075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPalServices", "PayPalServices\PayPalServices.csproj", "{30A54AAA-D516-471D-BA2C-7E3C76D835F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoInventoryServices", "ContosoInventoryServices\ContosoInventoryServices.csproj", "{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc4", "Mvc4\Mvc4.csproj", "{FB8D4116-3509-4D02-916C-2B9EB8584C7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,14 +63,18 @@ Global
 		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8D4116-3509-4D02-916C-2B9EB8584C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8D4116-3509-4D02-916C-2B9EB8584C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8D4116-3509-4D02-916C-2B9EB8584C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8D4116-3509-4D02-916C-2B9EB8584C7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{BBDE2675-ECA9-4C92-A908-CB1A647E3075} = {171B23F7-2471-41C8-8E25-F839830CEF78}
 		{30A54AAA-D516-471D-BA2C-7E3C76D835F8} = {171B23F7-2471-41C8-8E25-F839830CEF78}
 		{BEBA0E30-423C-46E2-8D1C-6DC50A90B4AE} = {171B23F7-2471-41C8-8E25-F839830CEF78}
-		{BBDE2675-ECA9-4C92-A908-CB1A647E3075} = {171B23F7-2471-41C8-8E25-F839830CEF78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35

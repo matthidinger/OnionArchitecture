@@ -21,6 +21,7 @@ namespace UI.Controllers
             return View(products);
         }
 
+
         public ActionResult AddToCart(int id)
         {
             var product = _db.Products.Find(id);
