@@ -33,7 +33,7 @@ namespace Core.Services.Impl
 
             foreach (var product in cart.Products)
             {
-                _shippingService.Ship(product);                
+                _shippingService.Ship(product.Id);                
             }
 
             cart.Empty();
@@ -52,12 +52,9 @@ namespace Core.Services.Impl
 
         private void EnsureProductsInStock(ShoppingCart cart)
         {
-            foreach (Product product in cart.Products)
+            if (cart.Products.Any(product => !_inventoryService.IsInStock(product.Id)))
             {
-                if (!_inventoryService.IsInStock(product.Id))
-                {
-                    throw new InvalidOperationException("The cart has some products that are out of stock");
-                }
+                throw new InvalidOperationException("The cart has some products that are out of stock");
             }
         }
     }

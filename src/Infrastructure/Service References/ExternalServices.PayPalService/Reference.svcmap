@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="26d5fff4-6b44-4af5-a348-7fed887d8f6d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:21320/PayPalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PayPalService.xsd" MetadataType="Schema" ID="4a9e6dbb-8267-42de-bd26-4eeb780ce4aa" SourceId="1" SourceUrl="http://localhost:21320/PayPalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PayPalService.disco" MetadataType="Disco" ID="24a5c2ee-fbaf-4e97-88be-8029f1f267c0" SourceId="1" SourceUrl="http://localhost:21320/PayPalService.svc?disco" />
+    <MetadataFile FileName="PayPalService.wsdl" MetadataType="Wsdl" ID="a311a5c3-c792-4510-b004-d6606a39aec1" SourceId="1" SourceUrl="http://localhost:21320/PayPalService.svc?wsdl" />
+    <MetadataFile FileName="PayPalService1.xsd" MetadataType="Schema" ID="62f7915b-60eb-4e66-bd13-ea1b6e7053d1" SourceId="1" SourceUrl="http://localhost:21320/PayPalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PayPalService2.xsd" MetadataType="Schema" ID="bd244243-01fc-4b56-9c5f-1b586a550987" SourceId="1" SourceUrl="http://localhost:21320/PayPalService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

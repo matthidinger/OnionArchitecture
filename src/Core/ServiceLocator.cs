@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Core
 {
@@ -6,6 +7,8 @@ namespace Core
     {
         T GetInstance<T>();
         object GetInstance(Type type);
+        IEnumerable<object> GetAll(Type serviceType);
+        IEnumerable<T> GetAll<T>();
     }
 
     public static class ServiceLocator

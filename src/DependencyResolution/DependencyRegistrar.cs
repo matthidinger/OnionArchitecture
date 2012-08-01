@@ -6,8 +6,9 @@ using Core.Services.Impl;
 using DependencyResolution;
 using Infrastructure.EntityFramework;
 using Infrastructure.Services;
-using Microsoft.Practices.Unity;
+using Ninject.Web.Common;
 using UI.Services;
+using Ninject;
 
 [assembly: PreApplicationStartMethod(typeof(DependencyRegistrar), "RegisterAllDependencies")]
 
@@ -17,19 +18,17 @@ namespace DependencyResolution
     {
         public static void RegisterAllDependencies()
         {
-            var container = new UnityContainer()
-                .RegisterType<IDataContext, EfDataContext>()
-                .RegisterType<IShoppingCartProcessor, ShoppingCartProcessor>()
-                .RegisterType<IUserSession, HttpUserSession>()
-                .RegisterType<IShippingService, ShippingServiceAdapter>()
-                .RegisterType<IInventoryService, InventoryServiceAdapter>()
-                .RegisterType<ILogger, Log4NetLogger>()
-                .RegisterType<IProductVMMapper, ProductMapper>()
-                .RegisterType<IOrderProcessor, OrderProcessorAdapter>();
-
+            var kernel = new StandardKernel();
+            kernel.Bind<IDataContext>().To<EfDataContext>().InRequestScope();
+            kernel.Bind<IShoppingCartProcessor>().To<ShoppingCartProcessor>();
+            kernel.Bind<IUserSession>().To<HttpUserSession>();
+            kernel.Bind<IShippingService>().To<ShippingServiceAdapter>();
+            kernel.Bind<IInventoryService>().To<InventoryServiceAdapter>();
+            kernel.Bind<ILogger>().To<Log4NetLogger>();
+            kernel.Bind<IOrderProcessor>().To<OrderProcessorAdapter>();
 
             // Set Unity as the Service Locator Provider
-            ServiceLocator.SetServiceLocator(() => new UnityServiceLocator(container));
+            ServiceLocator.SetServiceLocator(() => new NinjectServiceLocator(kernel));
         }
     }
 }

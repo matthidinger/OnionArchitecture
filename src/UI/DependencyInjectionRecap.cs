@@ -7,7 +7,6 @@ using Core.Domain;
 
 namespace NoDependencyInjection
 {
- 
     public class ProductsUI
     {
         protected GridView GridView { get; set; }
@@ -52,22 +51,23 @@ namespace WithDependencyInjection
 {
     public class ProductsUI
     {
+        private readonly ProductsBll _productsBll;
+
+        public ProductsUI(ProductsBll productsBll)
+        {
+            _productsBll = productsBll;
+        }
+
+        public ProductsUI() : this(new ProductsBll(new ProductsDal()))
+        {
+            
+        }
+
         protected GridView GridView { get; set; }
 
         public void DisplayProducts()
         {
-            var productsBll = BllFactory.GetProductsBll();
-            GridView.DataSource = productsBll.GetAllProducts();
-        }
-    }
-
-    public static class BllFactory
-    {
-        public static ProductsBll GetProductsBll()
-        {
-            var productsDal = new ProductsDal();
-            var productsBll = new ProductsBll(productsDal);
-            return productsBll;
+            GridView.DataSource = _productsBll.GetAllProducts();
         }
     }
 
@@ -80,7 +80,7 @@ namespace WithDependencyInjection
             _productsDal = productsDal;
         }
 
-        public List<Product> GetAllProducts()
+        public virtual List<Product> GetAllProducts()
         {
             var sqlDataReader = _productsDal.GetProductsDataReader();
             var productsList = new List<Product>();
@@ -96,7 +96,7 @@ namespace WithDependencyInjection
     }
 
 
-    public class ProductsDal
+    public class ProductsDal 
     {
         public SqlDataReader GetProductsDataReader()
         {

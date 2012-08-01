@@ -34,3 +34,26 @@ INFO - User visited home page at 7/10/2012 1:20:13 PM
 INFO - User visited home page at 7/10/2012 1:21:02 PM
 INFO - User visited home page at 7/10/2012 1:43:20 PM
 INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/10/2012 1:43:39 PM
+INFO - User visited home page at 7/12/2012 12:16:19 PM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/12/2012 12:16:31 PM
+INFO - User visited home page at 7/12/2012 12:16:48 PM
+INFO - User visited home page at 7/12/2012 12:28:31 PM
+INFO - User visited home page at 7/12/2012 12:29:59 PM
+INFO - User visited home page at 7/12/2012 12:33:21 PM
+INFO - User visited home page at 7/12/2012 12:34:23 PM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/12/2012 12:34:49 PM
+INFO - User visited home page at 7/12/2012 12:39:52 PM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/12/2012 12:40:01 PM
+INFO - User visited home page at 7/13/2012 8:43:00 AM
+INFO - User visited home page at 7/13/2012 8:44:41 AM
+INFO - User visited home page at 7/13/2012 8:48:31 AM
+INFO - User visited home page at 7/13/2012 11:06:01 AM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2012 11:08:08 AM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2012 11:08:16 AM
+INFO - User visited home page at 7/13/2012 11:08:18 AM
+INFO - Your order of 1 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2012 11:08:31 AM
+INFO - User visited home page at 7/13/2012 12:19:39 PM
+INFO - Your order of 2 items has been charged to 1111! It should arrive at your door shortly! at 7/13/2012 12:20:25 PM
+INFO - User visited home page at 7/13/2012 12:22:21 PM
+INFO - User visited home page at 7/13/2012 12:29:57 PM
+INFO - User visited home page at 7/13/2012 12:36:12 PM

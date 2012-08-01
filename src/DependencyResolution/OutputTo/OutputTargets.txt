@@ -1,0 +1,2 @@
+..\UI\bin
+..\Mvc4\bin

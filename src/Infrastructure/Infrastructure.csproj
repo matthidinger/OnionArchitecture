@@ -20,6 +20,22 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,6 +74,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityFramework\EfDataContext.cs" />
+    <Compile Include="Service References\ExternalServices.AcmeShippingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ExternalServices.ContosoInventoryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ExternalServices.PayPalService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Services\Log4NetLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -65,34 +96,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Service References\WebServices.InventoryServices\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\WebServices.OrderProcessorServices\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\WebServices.ShippingServices\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Services\InventoryServiceAdapter.cs" />
-    <Compile Include="Services\OrderProcessorAdapter.cs" />
-    <Compile Include="Services\ProductMapper.cs" />
-    <Compile Include="Services\ShippingServiceAdapter.cs" />
+    <Compile Include="Services\ContosoInventoryServiceAdapter.cs" />
+    <Compile Include="Services\PayPalOrderProcessor.cs" />
+    <Compile Include="Services\AcmeShippingServiceAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{6533F25E-B386-4123-B36A-CFFFF720A58F}</Project>
       <Name>Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UI\UI.csproj">
-      <Project>{91DECE5B-58F7-44F4-9090-156916F59656}</Project>
-      <Name>UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -105,85 +116,109 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\WebServices.InventoryServices\InventoryService.wsdl" />
-    <None Include="Service References\WebServices.InventoryServices\InventoryService.xsd">
+    <None Include="Service References\ExternalServices.AcmeShippingService\AcmeShippingService.wsdl" />
+    <None Include="Service References\ExternalServices.AcmeShippingService\AcmeShippingService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WebServices.InventoryServices\InventoryService1.xsd">
+    <None Include="Service References\ExternalServices.AcmeShippingService\AcmeShippingService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WebServices.OrderProcessorServices\OrderProcessorService.wsdl" />
-    <None Include="Service References\WebServices.OrderProcessorServices\OrderProcessorService.xsd">
+    <None Include="Service References\ExternalServices.ContosoInventoryService\ContosoInventoryService.wsdl" />
+    <None Include="Service References\ExternalServices.ContosoInventoryService\ContosoInventoryService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WebServices.OrderProcessorServices\OrderProcessorService1.xsd">
+    <None Include="Service References\ExternalServices.ContosoInventoryService\ContosoInventoryService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WebServices.ShippingServices\ShippingService.wsdl" />
-    <None Include="Service References\WebServices.ShippingServices\ShippingService.xsd">
+    <None Include="Service References\ExternalServices.PayPalService\Infrastructure.ExternalServices.PayPalService.CardValidationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ExternalServices.PayPalService\PayPalService.wsdl" />
+    <None Include="Service References\ExternalServices.PayPalService\PayPalService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WebServices.ShippingServices\ShippingService1.xsd">
+    <None Include="Service References\ExternalServices.PayPalService\PayPalService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WebServices.ShippingServices\ShippingService2.xsd">
+    <None Include="Service References\ExternalServices.PayPalService\PayPalService2.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\WebServices.InventoryServices\" />
-    <WCFMetadataStorage Include="Service References\WebServices.OrderProcessorServices\" />
-    <WCFMetadataStorage Include="Service References\WebServices.ShippingServices\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.InventoryServices\InventoryService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.InventoryServices\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.InventoryServices\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.InventoryServices\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.OrderProcessorServices\OrderProcessorService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.OrderProcessorServices\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.OrderProcessorServices\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.OrderProcessorServices\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.ShippingServices\ShippingService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.ShippingServices\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.ShippingServices\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\WebServices.ShippingServices\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <WCFMetadataStorage Include="Service References\ExternalServices.AcmeShippingService\" />
+    <WCFMetadataStorage Include="Service References\ExternalServices.ContosoInventoryService\" />
+    <WCFMetadataStorage Include="Service References\ExternalServices.PayPalService\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.AcmeShippingService\AcmeShippingService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.AcmeShippingService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.AcmeShippingService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.AcmeShippingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.PayPalService\PayPalService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.PayPalService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.PayPalService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.PayPalService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.ContosoInventoryService\ContosoInventoryService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.ContosoInventoryService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.ContosoInventoryService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExternalServices.ContosoInventoryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
