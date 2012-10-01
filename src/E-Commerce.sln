@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Web Services", "External Web Services", "{171B23F7-2471-41C8-8E25-F839830CEF78}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{6533F25E-B386-4123-B36A-CFFFF720A58F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{91DECE5B-58F7-44F4-9090-156916F59656}"
@@ -18,8 +20,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolution", "Dep
 		{BBDE2675-ECA9-4C92-A908-CB1A647E3075} = {BBDE2675-ECA9-4C92-A908-CB1A647E3075}
 		{30A54AAA-D516-471D-BA2C-7E3C76D835F8} = {30A54AAA-D516-471D-BA2C-7E3C76D835F8}
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Web Services", "External Web Services", "{171B23F7-2471-41C8-8E25-F839830CEF78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeShippingServices", "AcmeShippingServices\AcmeShippingServices.csproj", "{BBDE2675-ECA9-4C92-A908-CB1A647E3075}"
 EndProject
